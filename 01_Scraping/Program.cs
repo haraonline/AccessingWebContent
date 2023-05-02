@@ -13,7 +13,7 @@ namespace _01_Scraping
             string html = await client.GetStringAsync("https://en.wikipedia.org/wiki/Main_Page");
             //Console.WriteLine(html);
 
-            using (StreamWriter sw = new StreamWriter(@"C:\Users\harag\OneDrive\documents\Samples\wiki.html"))
+            using (StreamWriter sw = new StreamWriter(@"C:\Users\harag\OneDrive\Desktop\Http\wiki.html"))
             {
                 sw.WriteLine(html);
             }
